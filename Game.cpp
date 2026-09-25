@@ -68,13 +68,18 @@ void Medium()
             }
             cout<<"Correct! You guessed the number! \n \n";
             return ;
-        }else if (guess > number)
+        }else if (guess > number && guess<101)
         {
             cout<<"Too High!\n \n";
-        }else if (guess < number)
+        }else if (guess < number && guess>0)
         {
             cout<<"Too Low!\n \n";
+        }else if (guess<0 || guess>100)
+        {
+            cout<<"Invalid Guess \n";
+            cout<<"Attempt Deducted \n \n";
         }
+        
         
         
     }
@@ -167,6 +172,9 @@ int main()
             }else if (choice == 5)
             {
                 break ;
+            }else if (choice != 1 && choice != 2 && choice != 3 && choice != 4 &&  choice != 5)
+            {
+                cout<<"Enter a valid choice! \n";
             }
         }
         
