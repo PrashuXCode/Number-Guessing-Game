@@ -28,12 +28,16 @@ void Easy()
             }
             cout<<"Correct! You guessed the number! \n \n";
             return ;
-        }else if (guess > number)
+        }else if (guess > number && guess<51)
         {
             cout<<"Too High!\n \n";
-        }else if (guess < number)
+        }else if (guess < number && guess>0)
         {
             cout<<"Too Low!\n \n";
+        }else if (guess<0 || guess>50)
+        {
+            cout<<"Invalid Guess \n";
+            cout<<"Attempt Deducted \n \n";
         }
         
         
@@ -112,12 +116,16 @@ void Hard()
             }
             cout<<"Correct! You guessed the number! \n \n";
             return ;
-        }else if (guess > number)
+        }else if (guess > number && guess<201)
         {
             cout<<"Too High!\n \n";
-        }else if (guess < number)
+        }else if (guess < number && guess>0)
         {
             cout<<"Too Low!\n \n";
+        }else if (guess<0 || guess>200)
+        {
+            cout<<"Invalid Guess \n";
+            cout<<"Attempt Deducted \n \n";
         }
         
         
