@@ -13,7 +13,7 @@ void Easy()
     cout<<"You selected EASY. \n";
     cout<<"\n";
     cout<<"I'm thinking of a number between 1 and 50. \n";
-    cout<<"You have 10 attempts.";
+    cout<<"You have 10 attempts.\n";
     cout<<"\n";
     for (int i = 0; i < 10; i++)
     {
@@ -21,6 +21,11 @@ void Easy()
         cin>>guess;
         if (guess==number)
         {
+            if (i == 0)
+            {
+                cout<<"Incredible! You got it on your first try! \n \n";
+                return ;
+            }
             cout<<"Correct! You guessed the number! \n \n";
             return ;
         }else if (guess > number)
@@ -48,7 +53,7 @@ void Medium()
     cout<<"You selected MEDIUM. \n";
     cout<<"\n";
     cout<<"I'm thinking of a number between 1 and 100. \n";
-    cout<<"You have 7 attempts.";
+    cout<<"You have 7 attempts.\n";
     cout<<"\n";
     for (int i = 0; i < 7; i++)
     {
@@ -56,6 +61,11 @@ void Medium()
         cin>>guess;
         if (guess==number)
         {
+            if (i == 0)
+            {
+                cout<<"Incredible! You got it on your first try! \n \n";
+                return ;
+            }
             cout<<"Correct! You guessed the number! \n \n";
             return ;
         }else if (guess > number)
@@ -82,7 +92,7 @@ void Hard()
     cout<<"You selected HARD. \n";
     cout<<"\n";
     cout<<"I'm thinking of a number between 1 and 200. \n";
-    cout<<"You have 5 attempts.";
+    cout<<"You have 5 attempts.\n";
     cout<<"\n";
     for (int i = 0; i < 5; i++)
     {
@@ -90,6 +100,11 @@ void Hard()
         cin>>guess;
         if (guess==number)
         {
+            if (i == 0)
+            {
+                cout<<"Incredible! You got it on your first try! \n \n";
+                return ;
+            }
             cout<<"Correct! You guessed the number! \n \n";
             return ;
         }else if (guess > number)
