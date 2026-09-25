@@ -37,6 +37,41 @@ void Easy()
     cout<<"The number was : "<<number<<"\n \n"; 
 }
 
+void Medium()
+{
+    /*  Rules in Medium Difficulty 
+        1. Guess will be between 1 to 100
+        2. Player will get only 7 attempts
+    */
+    int number, guess;
+    number = rand() % 100 + 1 ;   //Using random func
+    cout<<"You selected MEDIUM. \n";
+    cout<<"\n";
+    cout<<"I'm thinking of a number between 1 and 100. \n";
+    cout<<"You have 7 attempts.";
+    cout<<"\n";
+    for (int i = 0; i < 7; i++)
+    {
+        cout<<"Enter Your Guess : ";
+        cin>>guess;
+        if (guess==number)
+        {
+            cout<<"Correct! You guessed the number! \n \n";
+            return ;
+        }else if (guess > number)
+        {
+            cout<<"Too High!\n \n";
+        }else if (guess < number)
+        {
+            cout<<"Too Low!\n \n";
+        }
+        
+        
+    }
+    cout<<"Game Over ! \n \n";
+    cout<<"The number was : "<<number<<"\n \n"; 
+}
+
 int main()
 {
     int play,choice ;
@@ -64,6 +99,14 @@ int main()
                 cout<<"Choose : ";
                 cin>>play;
 
+            }else if (choice == 2)
+            {
+                Medium();
+                cout<<"Play again ? \n \n";
+                cout<<"1----> Yes\n";
+                cout<<"2----> No\n \n";
+                cout<<"Choose : ";
+                cin>>play;
             }else if (choice == 5)
             {
                 break ;
