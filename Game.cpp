@@ -30,10 +30,10 @@ void Easy()
             return ;
         }else if (guess > number && guess<51)
         {
-            cout<<"Too High!\n \n";
+            cout<<"High!\n \n";
         }else if (guess < number && guess>0)
         {
-            cout<<"Too Low!\n \n";
+            cout<<"Low!\n \n";
         }else if (guess<0 || guess>50)
         {
             cout<<"Invalid Guess \n";
@@ -74,10 +74,10 @@ void Medium()
             return ;
         }else if (guess > number && guess<101)
         {
-            cout<<"Too High!\n \n";
+            cout<<"High!\n \n";
         }else if (guess < number && guess>0)
         {
-            cout<<"Too Low!\n \n";
+            cout<<"Low!\n \n";
         }else if (guess<0 || guess>100)
         {
             cout<<"Invalid Guess \n";
@@ -118,10 +118,10 @@ void Hard()
             return ;
         }else if (guess > number && guess<201)
         {
-            cout<<"Too High!\n \n";
+            cout<<"High!\n \n";
         }else if (guess < number && guess>0)
         {
-            cout<<"Too Low!\n \n";
+            cout<<"Low!\n \n";
         }else if (guess<0 || guess>200)
         {
             cout<<"Invalid Guess \n";
