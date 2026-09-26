@@ -71,10 +71,13 @@ int main()
             {
                 case 1:
                     Difficulty(50,10,"EASY");
+                    break;
                 case 2:
                     Difficulty(100,7,"MEDIUM");
+                    break;
                 case 3:
                     Difficulty(200,5,"HARD");
+                    break;
                 case 4:
                     int r,a;
                     cout<<"Enter the range from 1 to : ";
@@ -82,6 +85,7 @@ int main()
                     cout<<"Enter the no. of attempts : ";
                     cin>>a;
                     Difficulty(r,a,"CUSTOM");
+                    break;
                 case 5:
                     exitloop = true;
                     break;
